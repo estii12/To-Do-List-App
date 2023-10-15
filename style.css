@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+input,
+button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+input,
+button {
+    font-size: 16px;
+}
+
+.head_bar {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7D7AD1;
+    color: white;
+}
+
+main {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px;
+
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px solid rgba(151, 149, 149, 0.71);
+    border-radius: 5px;
+}
+
+.input_section>h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.input_section>form>.input {
+    margin: 8px 0;
+
+}
+
+.input_section>form>button {
+    background-color: #42408D;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.input_section>form>button>span {
+    font-weight: bold;
+}
+
+.input_section>form>.input>input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid rgba(151, 149, 149, 0.71);
+    margin-top:10px;
+}
+
+
+.input_section>form>.input>label {
+    color: #090832;
+    font-weight: bold;
+}
+
+.input_section>form>.input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section>form>.input_inline>label {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.search_section {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search_section>h2 {
+    color: rgb(0, 0, 0);
+}
+
+.search_section>form {
+    width: 100%;
+    display: flex;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 5px;
+}
+
+.search_section>form>label {
+    display: flex;
+    align-items: center;
+}
+
+.search_section>form>input {
+    padding: 10px;
+    border-radius: 5px;
+    width:100%;
+    border: 1px solid rgba(151, 149, 149, 0.71);
+}
+
+.search_section>form>button {
+    background-color: #42408D;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    padding:0px 15px;
+}
+
+.book_shelf {
+    margin: 16px 0 0 0;
+    padding: 16px;
+    border-radius: 5px;
+    background-color: rgba(238, 240, 253, 0.42);
+}
+
+.book_shelf>h2 {
+    color: rgb(0, 0, 0);
+}
+
+.book_shelf>.book_list {
+    padding: 16px;
+}
+
+.book_shelf>.book_list>.book_item {
+    padding: 8px 16px 16px 16px;
+    border: 1px solid #FBF5F5;
+    border-radius: 5px;
+    margin: 10px 0;
+    background-color:white;
+}
+
+.book_shelf>.book_list>.book_item>h3,
+p {
+    margin: 8px 0;
+}
+
+.book_shelf>.book_list>.book_item>.action>button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf>.book_list>.book_item>.action>.green {
+    background-color: #05BF4F;
+    color: white;
+    padding:8px 15px 8px 15px;
+}
+
+.book_shelf>.book_list>.book_item>.action>.blue {
+    background-color: #0B9DDB;
+    color: white;
+    padding:8px 15px 8px 15px;
+}
+
+.book_shelf>.book_list>.book_item>.action>.red {
+    background-color: #D80032;
+    color: white;
+    padding:8px 15px 8px 15px;
+    margin-top:8px;
+}
+
+.container{
+    display:inline;
+}
+
+
+@media (max-width: 320px) {
+    .search_section>form {
+        display:block !important;
+    }
+
+    .search_section>form>button {
+        width:100%;
+        padding:5px;
+        margin-top:5px;
+    }
+}
